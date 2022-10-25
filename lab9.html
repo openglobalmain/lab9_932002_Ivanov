@@ -11,43 +11,39 @@
        
         <table>
         <tr>
-        <td>
+        <td colspan="5">
         <input type="text" name="input" class="display" id = "main">
         </td>
         </tr>
        <div class = "butt">
-        <tr>
-        <td class="buttons">
-            <input type="button" name="seven" value="7" OnClick="calc.input.value += '7'">
-            <input type="button" name="eight" value="8" OnClick="calc.input.value += '8'">
-            <input type="button" name="nine" value="9" OnClick="calc.input.value += '9'">
-            <input type="button" name="div" value="/" OnClick="calc.input.value += '/'">
-            <input type="button" name="clear" value="c" OnClick="calc.input.value = ''">
-        <br>
-            <input type="button" name="four" value="4" OnClick="calc.input.value += '4'">
-            <input type="button" name="five" value="5" OnClick="calc.input.value += '5'">
-            <input type="button" name="six" value="6" OnClick="calc.input.value += '6'">
-            <input type="button" name="mul" value="x" OnClick="calc.input.value += '*'">
-            <input type="button" name="sub" value="<-" OnClick="calc.input.value = calc.input.value.slice(0,-1)">
-        <br>
-            <input type="button" name="one" value="1" OnClick="calc.input.value += '1'">
-            <input type="button" name="two" value="2" OnClick="calc.input.value += '2'">
-            <input type="button" name="three" value="3" OnClick="calc.input.value += '3'">
-            <input type="button" name="sub" value="-" OnClick="calc.input.value += '-'">
-            <input type="button" name="two" value="=" OnClick="calc.input.value += eval(calc.input.value)">
-        <br>
-            <input type="button" name="three" value="0" OnClick="calc.input.value += '0'">
-            <input type="button" name="zero" value="0" OnClick="calc.input.value += '0'">
-            <input type="button" name="dot" value="." OnClick="calc.input.value += '.'">
-            <input type="button" name="add" value="+" OnClick="calc.input.value += '+'">
-            <input type="button" name="doit" value="=" OnClick="calc.input.value = eval(calc.input.value)">
-        <br>
+        <tr class = "butt">
+            <td><input type="button" name="seven" value="7" OnClick="calc.input.value += '7'"></td>
+            <td><input type="button" name="eight" value="8" OnClick="calc.input.value += '8'"></td>
+            <td><input type="button" name="nine" value="9" OnClick="calc.input.value += '9'"></td>
+            <td><input type="button" name="div" value="/" OnClick="calc.input.value += '/'"></td>
+            <td><input type="button" name="clear" value="c" OnClick="calc.input.value = ''"></td>
+            </tr>
+            <tr>
+            <td><input type="button" name="four" value="4" OnClick="calc.input.value += '4'"></td>
+            <td><input type="button" name="five" value="5" OnClick="calc.input.value += '5'"></td>
+            <td><input type="button" name="six" value="6" OnClick="calc.input.value += '6'"></td>
+            <td><input type="button" name="mul" value="x" OnClick="calc.input.value += '*'"></td>
+            <td><input type="button" name="sub" value="<-" OnClick="calc.input.value = calc.input.value.slice(0,-1)"></td>
             
+            </tr>
+            <tr>
+            <td><input type="button" name="one" value="1" OnClick="calc.input.value += '1'"></td>
+            <td><input type="button" name="two" value="2" OnClick="calc.input.value += '2'"></td>
+            <td><input type="button" name="three" value="3" OnClick="calc.input.value += '3'"></td>
+            <td><input type="button" name="sub" value="-" OnClick="calc.input.value += '-'"></td>
+            <td rowspan = "2"><input type="button" name="ravno" id = "ravno" value="=" OnClick="calc.input.value = eval(calc.input.value).toFixed(4)"></td>
             
-            
-            
-        </td>
-        </tr>
+            </tr>
+            <tr>
+            <td colspan = "2"><input type="button" name="three" id = "zero" value="0" OnClick="calc.input.value += '0'"></td> 
+            <td><input type="button" name="dot" value="." OnClick="calc.input.value += '.'"></td>
+            <td><input type="button" name="add" value="+" OnClick="calc.input.value += '+'"></td>
+            </tr>
       </table>
     </div>
     </form>
